@@ -20,3 +20,7 @@ script:
 build_image: drydock/u14pytpls:prod
 
 archive: true
+
+services:
+  - mysql
+  #- postgres
