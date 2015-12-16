@@ -3,7 +3,8 @@ language: python
 python:
   - 2.7
   
-  
+build_image: drydock/u12pytpls:tip
+
 install:
   - pip install -r requirements.txt
 
@@ -18,7 +19,7 @@ script:
   - which python && coverage run --branch test.py
   - which python && coverage xml -o shippable/codecoverage/coverage.xml test.py
 
-build_image: drydock/u14pytpls:tip
+#build_image: drydock/u14pytpls:tip
 
 archive: true
 
